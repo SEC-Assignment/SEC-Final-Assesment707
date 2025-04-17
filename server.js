@@ -7,6 +7,9 @@
 *
 ********************************************************************************/
 //var HTTP_PORT = process.env.HTTP_PORT || 8080;
+require("dotenv").config();
+const dbPassword = process.env.DB_PASSWORD;
+
 var HTTP_PORT = process.env.PORT || 8080;
 const HOST = '0.0.0.0';
 var express = require("express");
@@ -16,7 +19,7 @@ var app = express();
 var collegeData = require("./modules/collegeData");
 
 app.set('json spaces', 2);
-eval(userInput);
+//eval(userInput);
 
 //Set Handlebar Template engine to express server
 app.engine('.hbs', exphbs.engine({ 
