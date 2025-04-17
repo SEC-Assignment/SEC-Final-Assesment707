@@ -1,0 +1,21 @@
+# Node.js
+node_modules/
+.env
+.DS_Store
+
+# Logs
+*.log
+logs/
+
+# Secrets and API Keys
+*.pem
+*.key
+*.crt
+
+# IDE files
+.vscode/
+*.swp
+
+# Database
+*.sqlite
+*.db
